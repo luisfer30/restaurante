@@ -15,7 +15,7 @@ die();
     <head>
         <title>Bienvenido</title>
         <meta name = "viewport" content="width=device=width,user-scalable=yes, initial-scale=1.0, maximun-scale=3.0, minimun-scale=1.0"   >
-        <link rel="stylesheet" type="text/css" href="../css">
+        <link rel="stylesheet" type="text/css" href="../css/bienvenido.css">
         <link href="https://file.myfontastic.com/C6fjXXQHbwwzLn4pYNbBRK/icons.css" rel="stylesheet">
     </head>
     <body>
