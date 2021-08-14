@@ -39,7 +39,7 @@ die();
         </header>
 <nav class="main-nav">
     <div class="container container--flex">
-        <span class="icon-menu" id="btnmenu"></span>
+        <span class="icon-barra" id="btnmenu"></span>
         <ul class="menu" id="menu"> 
             <li class="menu__item" ><a href="/" class="menu__link menu__link--select">Inicio</a></li>
             <li class="menu__item" ><a href="nosotros.html" class="menu__link">Nosotros</a></li>
@@ -50,7 +50,6 @@ die();
             <a href="" class="social-icon__link"><span class="icon-facebook"></span></a>
             <a href="" class="social-icon__link"><span class="icon-instagram"></span></a>
             <a href="" class="social-icon__link"><span class="icon-correo"></span></a>
-
         </div>
     </div>
 </nav>
@@ -138,6 +137,6 @@ die();
 
     </div>
 </footer>
-
+<script src="../js/menu.js"></script>
     </body>
     </html>
