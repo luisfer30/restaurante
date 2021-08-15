@@ -86,7 +86,7 @@ die();
 
 </section>
 <!-- seccion de menus  -->
-<section class="group today-sepecial">
+<section class="group today-special">
     <h2 class="group__title">Especiales</h2>
     <div class="container container--flex">
     <div class="column column--50-25">
@@ -120,9 +120,9 @@ die();
         </div>
         <div class="column column--33">
             <h2 class="column__title">Contactanos</h2>
-            <p class="column__txt"></p>
-            <p class="column__txt"></p>
-            <p class="column__txt"></p>
+            <p class="column__txt">correo</p>
+            <p class="column__txt">telefono</p>
+            <p class="column__txt">direccion</p>
         </div>
         <div class="column column--33">
             <h2 class="column__title">Siguenos en nuestras redes</h2>
