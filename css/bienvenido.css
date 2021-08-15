@@ -156,10 +156,139 @@ h1 ,h2, h3, h4, h5 ,h6{
     font-size: 1.5em;
     font-weight: bold;
 }
+/*----------------ESTILOS PRINCIPALES----------*/
+.group--color .container{
+    background: #DE423A;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+.main-__title{
+    margin: 15px;
+    font-size: 1.8em;
+    font-family: 'Pacifico' cursive;
+    font-weight: 100;
+}
+.column__title{
+    font-size: 1.3em;
+}
+.main__about__description .column:nth-child(2){
+    padding: 10px;
+}
+.btn{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    width: 120px;
+    background: #DE423A;
+    color: white;
+    padding: 10px;
+    margin: 10px auto;
+}
+.group__title{
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    font-weight: 100;
+    font-size: 1.8em;
+    margin: 30px;
+
+}
+.today-special .column{
+    margin-bottom: 30px;
+    text-align: center;
+}
+.today-special__img{
+    margin: auto;
+    max-width: 350px;
+}
+.today-special__title{
+    text-align: center;
+    font-size: 1.3em;
+    padding-top: 10px;
+    padding-bottom: 20px;
+
+}
+.today-special__price{
+    text-align: center;
+    font-size: 1.5em;
+    color: #DE423A;
+    font-weight: bold;
+}
+
+/*---------ESTILOS DEL FOOTER----------*/
+.main-footer{
+    background: #222;
+    color: white;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: .8em;
+}
+.copy{
+    text-align: center;
+    margin: auto;
+    margin-top: 15px;
+}
+.main-footer [class*="icon-"]{
+    color: white;
+    text-decoration: none;
+
+}
+.main-footer [class*="icon-"]:before{
+    position: relative;
+    top: 3px;
+    right: 5px;
+
+}
+/*-------------ESTILOS RESPONSIVE------------*/
+@media screen and (min-width: 480px){
+    .logo{
+        color: white;
+    }
+    .main-header__contactInfo{
+        text-align: right;
+    }
+  
+    .main-header__contactInfo__phone{
+        background: none;
+    }
+    .main-header__contactInfo__address{
+        color: white;
+
+    }
+    
+    .main-nav{
+        background: rgba(0, 0, 0, 0.85)
+    }
+      .banner{
+        margin-top: -145px;
+        z-index: -1000;
+    }
+    .banner__content{
+        font-size: 2em;
+    }
+    .column--50{
+        width: 49%;    
+    }
+    .column--50-25{
+        width: 49%;
+    }
+    .main__about__description .column:nth-child(2){
+        padding-left: 20px;
+        font-size: .9em;
+    }
+     .main__about__description .btn{
+        margin: 0;
+    }
+    .today-special .column{
+        border: 5px solid #ddd;
+        padding: 5px;
+    }
 
 
 
 
+} 
 
 
 

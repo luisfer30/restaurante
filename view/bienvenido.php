@@ -30,9 +30,6 @@ die();
                         </p> 
                        <p class="main-header__contactInfo__address">
                            <span class="icon-ubicacion">Direccion</span>
-                           <p class="main-header__contactInfo__cerrar">
-                               <a href="../validaciones/cerrar.php">Cerrar session</a>
-                           </p>
                     </p>
                 </div>
             </div>
@@ -41,7 +38,7 @@ die();
     <div class="container container--flex">
         <span class="icon-barra" id="btnmenu"></span>
         <ul class="menu" id="menu"> 
-            <li class="menu__item" ><a href="/" class="menu__link menu__link--select">Inicio</a></li>
+            <li class="menu__item" ><a href="../validaciones/cerrar.php" class="menu__link menu__link--select">Cerrar Sesion</a></li>
             <li class="menu__item" ><a href="nosotros.html" class="menu__link">Nosotros</a></li>
             <li class="menu__item" ><a href="menu.php" class="menu__link">Menu</a></li>
             <li class="menu__item" ><a href="contacto.php" class="menu__link">Contacto</a></li>
@@ -63,7 +60,7 @@ die();
     <section class="group group--color">   
 <div class="container">
     <h2 class="main__tittle">Bienvenido a su restaurante</h2>
-    <p class="main_txt">asdadad</p>
+    <p class="main_txt">Breve descirpcion del restaurante</p>
 </div>
     </section>
 <section class="group main__about__description">
@@ -90,21 +87,22 @@ die();
 </section>
 <!-- seccion de menus  -->
 <section class="group today-sepecial">
-    <h2 class="today-sepecial__title">Espesciales de hoy</h2>
+    <h2 class="group__title">Especiales</h2>
+    <div class="container container--flex">
     <div class="column column--50-25">
-        <img src="../imagenes/food1.jpg" class="today-sepecial__img">
-        <div class="today-sepecial__title">Nombre de los platos</div>
+        <img src="../imagenes/food1.jpg" class="today-special__img">
+        <div class="today-special__title">Nombre de los platos</div>
     </div><div class="column column--50-25">
-        <img src="../imagenes/food1.jpg" class="today-sepecial__img">
-        <div class="today-sepecial__title">Nombre de los platos</div>
+        <img src="../imagenes/food1.jpg" class="today-special__img">
+        <div class="today-special__title">Nombre de los platos</div>
     </div><div class="column column--50-25">
-        <img src="../imagenes/food1.jpg" class="today-sepecial__img">
-        <div class="today-sepecial__title">Nombre de los platos</div>
+        <img src="../imagenes/food1.jpg" class="today-special__img">
+        <div class="today-special__title">Nombre de los platos</div>
     </div><div class="column column--50-25">
-        <img src="../imagenes/food1.jpg" class="today-sepecial__img">
-        <div class="today-sepecial__title">Nombre de los platos</div>
+        <img src="../imagenes/food1.jpg" class="today-special__img">
+        <div class="today-special__title">Nombre de los platos</div>
     </div>
-
+</div>
 </section>
 
     </main>
@@ -128,9 +126,9 @@ die();
         </div>
         <div class="column column--33">
             <h2 class="column__title">Siguenos en nuestras redes</h2>
-            <p class="column__txt"><a href="" class="icon-facebook"></a></p>
-            <p class="column__txt"><a href="" class="icon-instagram"></a></p>
-            <p class="column__txt"><a href="" class="icon-correo"></a></p>
+            <p class="column__txt"><a href="" class="icon-facebook">Facebook</a></p>
+            <p class="column__txt"><a href="" class="icon-instagram">Instagram</a></p>
+            <p class="column__txt"><a href="" class="icon-correo">Email</a></p>
         </div>
 
         <p class="copy"> 2021 nombre restaurante | Todos los derechos reservados</p>
