@@ -22,14 +22,14 @@ die();
         <header class="main-header">
             <div class="container container--flex">
                 <div class="logo-container column column--50 ">
-                <h1 class="logo">Restaurante</h1>
+                <h1 class="logo">Restaurante "CG"</h1>
                 </div>
                 <div class="main-header__contactInfo column column--50 ">
                     <p class="main-header__contactInfo__phone">
-                        <span class="icon-celular">celular</span>
+                        <span class="icon-celular">0963197829</span>
                         </p> 
                        <p class="main-header__contactInfo__address">
-                           <span class="icon-ubicacion">Direccion</span>
+                           <span class="icon-ubicacion">Sauces 2 Mz 43</span>
                     </p>
                 </div>
             </div>
@@ -39,14 +39,14 @@ die();
         <span class="icon-barra" id="btnmenu"></span>
         <ul class="menu" id="menu"> 
             <li class="menu__item" ><a href="../validaciones/cerrar.php" class="menu__link menu__link--select">Cerrar Sesion</a></li>
-            <li class="menu__item" ><a href="nosotros.html" class="menu__link">Nosotros</a></li>
             <li class="menu__item" ><a href="menu.php" class="menu__link">Menu</a></li>
             <li class="menu__item" ><a href="contacto.php" class="menu__link">Contacto</a></li>
+            <li class="menu__item" ><a href="#" class="menu__link"><?php echo $_SESSION['usuario']; ?></a></li>
         </ul>
         <div class="social-icon">
-            <a href="" class="social-icon__link"><span class="icon-facebook"></span></a>
-            <a href="" class="social-icon__link"><span class="icon-instagram"></span></a>
-            <a href="" class="social-icon__link"><span class="icon-correo"></span></a>
+            <a href="#" class="social-icon__link"><span class="icon-facebook"></span></a>
+            <a href="#" class="social-icon__link"><span class="icon-instagram"></span></a>
+            <a href="#" class="social-icon__link"><span class="icon-correo"></span></a>
         </div>
     </div>
 </nav>
@@ -59,23 +59,18 @@ die();
     <main class="main">
     <section class="group group--color">   
 <div class="container">
-    <h2 class="main__tittle">Bienvenido a su restaurante</h2>
-    <p class="main_txt">Breve descirpcion del restaurante</p>
+    <h2 class="main__tittle">Bienvenido a restaurante "CG"</h2>
+    <p class="main_txt">Somos un restaurante que le gusta hacer feliz a sus clientes con sus deliciosos platos</p>
 </div>
     </section>
 <section class="group main__about__description">
     <div class="container container--flex">
         <div class="column column--50">
-        <img src="../imagenes/food1.jpg">
+        <img src="../imagenes/platoP.jpg">
         </div>
         <div class="column column--50">
-        <h3 class="column__title">Titulo</h3>
-        <p class="column_txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h3 class="column__title">Vendemos a cualquier horario</h3>
+        <p class="column_txt">Desde un exquisito desayuno, hasta un delicioso almuerzo.</p>
 
         <a href="" class="btn btn--contact">Contact</a>
 
@@ -90,17 +85,17 @@ die();
     <h2 class="group__title">Especiales</h2>
     <div class="container container--flex">
     <div class="column column--50-25">
-        <img src="../imagenes/food1.jpg" class="today-special__img">
-        <div class="today-special__title">Nombre de los platos</div>
+        <img src="../imagenes/plato1.jpg" class="today-special__img">
+        <div class="today-special__title">Menestra y carne</div>
     </div><div class="column column--50-25">
-        <img src="../imagenes/food1.jpg" class="today-special__img">
-        <div class="today-special__title">Nombre de los platos</div>
+        <img src="../imagenes/plato2.jpg" class="today-special__img">
+        <div class="today-special__title">Seco de pollo</div>
     </div><div class="column column--50-25">
-        <img src="../imagenes/food1.jpg" class="today-special__img">
-        <div class="today-special__title">Nombre de los platos</div>
+        <img src="../imagenes/plato3.jpg" class="today-special__img">
+        <div class="today-special__title">Chaulafan</div>
     </div><div class="column column--50-25">
-        <img src="../imagenes/food1.jpg" class="today-special__img">
-        <div class="today-special__title">Nombre de los platos</div>
+        <img src="../imagenes/plato4.jpg" class="today-special__img">
+        <div class="today-special__title">Yapingacho</div>
     </div>
 </div>
 </section>
@@ -110,19 +105,14 @@ die();
 <footer class="main-footer">
     <div class="container container--flex">
         <div class="column column--33">
-            <h2 class="column__title">Por que visitarnos?</h2>
-            <p class="column__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h2 class="column__title">¿Por que visitarnos?</h2>
+            <p class="column__txt">Nos encanta ofrecer el mejor servicio a los clientes</p>
         </div>
         <div class="column column--33">
             <h2 class="column__title">Contactanos</h2>
-            <p class="column__txt">correo</p>
-            <p class="column__txt">telefono</p>
-            <p class="column__txt">direccion</p>
+            <p class="column__txt">"Falta por crear""</p>
+            <p class="column__txt">0963197829</p>
+            <p class="column__txt">Sauces 2 Mz 43</p>
         </div>
         <div class="column column--33">
             <h2 class="column__title">Siguenos en nuestras redes</h2>
@@ -131,7 +121,7 @@ die();
             <p class="column__txt"><a href="" class="icon-correo">Email</a></p>
         </div>
 
-        <p class="copy"> 2021 nombre restaurante | Todos los derechos reservados</p>
+        <p class="copy"> © 2021 restaurante "CG" | Todos los derechos reservados</p>
 
     </div>
 </footer>
