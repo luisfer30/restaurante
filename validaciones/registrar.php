@@ -3,7 +3,7 @@ include 'conexion.php';
 $nombre = $_POST['nombre'];
 $apellido = $_POST['apellido'];
 $direccion = $_POST['direccion'];
-$correo = $_POST['correo'];
+    $correo = $_POST['correo'];
 $clave = $_POST['clave'];
 //encriptar clave
 $clave = hash('sha512', $clave);
@@ -22,8 +22,7 @@ if (!$resultado) {
 }else{
 	echo '
     <script>
-    alert("El usuario se registro correctamente");
-    window.location = "../index.php";
+    window.location = "registrar_cuenta.php";
     </script>
     ';
     exit;
