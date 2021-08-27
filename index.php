@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+<?php
+header("location:carrito/login.php");
+
+?>
+<!--<!DOCTYPE html>
+
     <html>
     <head>
         <title>Inicio</title>

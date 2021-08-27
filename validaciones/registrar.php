@@ -11,24 +11,24 @@ require '../PHPMailer/PHPMailer.php';
 require '../PHPMailer/SMTP.php';
 
 $mail = new PHPMailer(true);
+$email=$_POST['email'];
+$conexion->query("insert into usuario (nombre,telefono,email,password,img_perfil,nivel)  
+    values( 
+      '".$_POST['nombre']."',
+      '".$_POST['telefono']."',
+      '".$_POST['email']."',
+      '".sha1($password)."',
+      'default.jpg',
+      'cliente' 
+          )   
+  ")or die($conexion->error);
+  $id_usuario = $conexion->insert_id;
 
-
-$nombre = $_POST['nombre'];
-$apellido = $_POST['apellido'];
-$direccion = $_POST['direccion'];
-$correo = $_POST['correo'];
-$clave = $_POST['clave'];
-//encriptar clave
-$clave = hash('sha512', $clave);
-//insertar datos
-$insertar = "INSERT INTO usuario (nombre, apellido, direccion, correo, clave)VALUES('$nombre', '$apellido', '$direccion', '$correo', '$clave')";
-//ejecutar consulta
-$resultado = mysqli_query($conexion,$insertar);
-if (!$resultado) {
+if (!$conexion) {
 	echo '
     <script>
     alert("El usuario no se pudo registrar, por favor intente de nuevo");
-    window.location = "../view/registrar.php";
+    window.location = "../view/registro.php";
     </script>
     ';
     exit;
@@ -46,7 +46,7 @@ if (!$resultado) {
     
         //Recipients
         $mail->setFrom('pruebacuentas626@gmail.com', 'RESTAURANTE "CG"');
-        $mail->addAddress($correo);     //Add a recipient
+        $mail->addAddress($email);     //Add a recipient
         //$mail->addAddress('ellen@example.com');               //Name is optional
         //$mail->addReplyTo('info@example.com', 'Information');
         //$mail->addCC('cc@example.com');
